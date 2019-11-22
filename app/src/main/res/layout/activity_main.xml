@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bitmap"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_gradient" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_marginStart="20dp" />
+
+            <customfonts.TextView_Lato_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17.3sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="3.7sp"
+                android:text="Kuala Lumpur"
+                android:layout_marginStart="20dp" />
+
+
+
+
+        </LinearLayout>
+
+        <customfonts.TextView_Lato_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13.4sp"
+            android:textColor="#ffffff"
+
+            android:layout_marginLeft="15.4dp"
+            android:layout_marginTop="98.6dp"
+            android:layout_marginRight="15.4dp"
+            android:lineSpacingExtra="6.6sp"
+            android:text="Kuala Lumpur (Malaysian pronunciation: [ˈkualə, -a ˈlumpo(r), -ʊ(r)]), officially the Federal Territory of Kuala Lumpur (Malay: Wilayah Persekutuan Kuala Lumpur) and commonly known as KL, is the national capital and largest city in Malaysia."
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.4dp"
+            android:layout_marginTop="224.7dp"
+            android:layout_marginRight="15.4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13.4sp"
+                android:textColor="#fefeff"
+                android:letterSpacing="0.03"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="2.6sp"
+                android:text="Thursday, 18 July, 13:50 "
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_sun"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30.7sp"
+                    android:textColor="#fefeff"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="6.3sp"
+                    android:gravity="end"
+                    android:text="27° "
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </FrameLayout>
+
+    <customfonts.TextView_Lato_Regular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13.4sp"
+        android:textColor="#fefeff"
+        android:layout_above="@+id/cardview"
+        android:layout_marginRight="15.4dp"
+        android:layout_marginLeft="15.4dp"
+        android:letterSpacing="0.03"
+        android:layout_marginBottom="20dp"
+        android:lineSpacingExtra="2.6sp"
+        android:text="Popular places"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+
+                android:layout_height="245.9dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginBottom="60dp"
+                app:cardElevation="0dp"
+
+                android:elevation="0dp"
+                app:cardCornerRadius="9dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="15.4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16.2sp"
+                        android:textColor="#131314"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="@string/petronas_towers"
+                        android:layout_marginStart="15.4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13.4sp"
+                        android:textColor="#8f8f8f"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Identical Towers, Identical Wonders. Enjoy and capture the spires…"
+                        />
+
+                    <RatingBar
+                        android:layout_marginLeft="15.4dp"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:layout_marginStart="15.4dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/travelcity_imgone"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+
+                android:layout_height="245.9dp"
+                android:layout_marginRight="16.8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="60dp"
+                app:cardElevation="0dp"
+
+                android:elevation="0dp"
+                app:cardCornerRadius="9dp"
+                android:layout_marginEnd="16.8dp"
+                android:layout_marginStart="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16.2sp"
+                        android:textColor="#131314"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="@string/bukit_bintang"
+                        android:layout_marginStart="15.4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13.4sp"
+                        android:textColor="#8f8f8f"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Identical Towers, Identical Wonders. Enjoy and capture the spires…"
+                        />
+
+                    <RatingBar
+                        android:layout_marginLeft="15.4dp"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:layout_marginStart="15.4dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/travelcity_imgtwo"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+
+                android:layout_height="245.9dp"
+                android:layout_marginRight="16.8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="60dp"
+                app:cardElevation="0dp"
+
+                android:elevation="0dp"
+                app:cardCornerRadius="9dp"
+                android:layout_marginEnd="16.8dp"
+                android:layout_marginStart="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16.2sp"
+                        android:textColor="#131314"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="Bukit Bintang"
+                        android:layout_marginStart="15.4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13.4sp"
+                        android:textColor="#8f8f8f"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Identical Towers, Identical Wonders. Enjoy and capture the spires…"
+                        />
+
+                    <RatingBar
+                        android:layout_marginLeft="15.4dp"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:layout_marginStart="15.4dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/travelcity_imgtwo"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
